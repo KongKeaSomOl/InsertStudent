@@ -1,0 +1,95 @@
+/* Reset margin and padding */
+* {
+  margin: 2px;
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #dfe6e9;
+}
+h1 {
+  text-align: center;
+
+  margin-top: 3px;
+
+}
+.form-container {
+ margin-top: 60px;
+  background-color:#f5f6fa;
+  width: 500px;
+  padding: 40px;
+  border-radius: 8px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+ 
+}
+.dob {
+ height: 40px;
+}
+input[type="text"] {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  /* background-color: #555; */
+  background-color: #00cec9;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  /* background-color: #666; */
+  background-color: #81ecec;
+}
+.navbar ul {
+  list-style-type: none;
+  margin-left: 15%;
+
+  color: #00cec9;
+}
+
+
+.navbar li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+  text-decoration: none;
+  color: #00cec9;
+}
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+/* a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+} */
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}

@@ -1,0 +1,24 @@
+CREATE TABLE student (
+    studentID int NOT null AUTO_INCREMENT,
+    firstName varchar(20),
+    lastName varchar(20),
+    street varchar(20),
+    city varchar(20),
+    DOB date,
+    PRIMARY KEY (studentID)
+);
+
+CREATE TABLE course (
+    courseID int NOT null AUTO_INCREMENT,
+    courseName varchar(20),
+    duration int(2),
+    fees float,
+    PRIMARY key (courseID)
+);
+create TABLE registration (
+    courseID int not null,
+    studentID int not null,
+    DOJ date,
+    FOREIGN key (courseID) REFERENCES course (courseID),
+    FOREIGN key (studentID) REFERENCES student (studentID)
+); 
